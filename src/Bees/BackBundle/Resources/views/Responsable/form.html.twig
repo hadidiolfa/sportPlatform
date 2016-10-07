@@ -1,0 +1,84 @@
+
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="form-group">
+          {{ form_label(form.nom, "Nom", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.nom, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.nom) }}
+              <span class="help-block">Validation</span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.prenom, "Prenom", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.prenom, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.prenom) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.email, "E-mail", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.email, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.email) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.adresse, "Adresse", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.adresse, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.adresse) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.ville, "Ville", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.ville, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.ville) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.phone, "Num. de téléphone", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.phone, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.phone) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.cin, "CIN", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.cin, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.cin) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+          {{ form_label(form.poste, "Poste occupé", {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+            <div class="col-sm-8">
+              {{ form_widget(form.poste, {'attr' : {'class' : 'form-control form-white'}}) }}
+              {{ form_errors(form.poste) }}
+              <span class="help-block">Validation. </span>
+              <span class="material-input"></span>
+            </div>
+          </div>
+          

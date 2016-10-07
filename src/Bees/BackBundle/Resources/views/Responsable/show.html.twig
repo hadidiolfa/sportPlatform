@@ -1,0 +1,60 @@
+{% extends "BeesBackBundle::layout.html.twig" %}
+
+{% block back_content %}
+<h1>Responsable</h1>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ responsable.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom</th>
+            <td>{{ responsable.nom }}</td>
+        </tr>
+        <tr>
+            <th>Prenom</th>
+            <td>{{ responsable.prenom }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ responsable.email }}</td>
+        </tr>
+        <tr>
+            <th>Adresse</th>
+            <td>{{ responsable.adresse }}</td>
+        </tr>
+        <tr>
+            <th>Ville</th>
+            <td>{{ responsable.ville }}</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>{{ responsable.phone }}</td>
+        </tr>
+        <tr>
+            <th>Cin</th>
+            <td>{{ responsable.cin }}</td>
+        </tr>
+        <tr>
+            <th>Poste</th>
+            <td>{{ responsable.poste }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('responsable_index') }}">Back to the list</a>
+    </li>
+    <li>
+        <a href="{{ path('responsable_edit', { 'id': responsable.id }) }}">Edit</a>
+    </li>
+    <li>
+        {{ form_start(delete_form) }}
+            <input type="submit" value="Delete">
+        {{ form_end(delete_form) }}
+    </li>
+</ul>
+{% endblock %}

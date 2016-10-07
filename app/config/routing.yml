@@ -1,0 +1,7 @@
+bees_back_responsable:
+    resource: "@BeesBackBundle/Controller/ResponsableController.php"
+    type:     annotation
+
+bees_back:
+    resource: "@BeesBackBundle/Resources/config/routing.yml"
+    prefix:   /
